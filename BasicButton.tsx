@@ -1,9 +1,13 @@
 import "./BasicButton.css";
 
-function BasicButton() {
+type BasicButtonProps = {
+  text: string;
+};
+
+function BasicButton({ text }: BasicButtonProps) {
   return (
     <button className="basic-button">
-      클릭하세요
+      {text}
     </button>
   );
 }
